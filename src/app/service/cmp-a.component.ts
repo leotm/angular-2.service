@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'si-cmp-a',
-    template: `
+  selector: 'si-cmp-a',
+  template: `
     <div>
       <input type="text" #input>
       <button (click)="onLog(input.value)">Log</button>
@@ -22,22 +22,22 @@ import { Component } from '@angular/core';
   `
 })
 export class CmpAComponent {
-    value = '';
-    items: string[] = [];
+  value = '';
+  items: string[] = [];
 
-    onLog(value: string) {
-  
-    }
+  onLog(value: string) {
 
-    onStore(value: string) {
- 
-    }
+  }
 
-    onGet() {
- 
-    }
+  onStore(value: string) {
 
-    onSend(value: string) {
-   
-    }
+  }
+
+  onGet() {
+
+  }
+
+  onSend(value: string) {
+
+  }
 }

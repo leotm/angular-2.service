@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'si-cmp-b',
-    template: `
+  selector: 'si-cmp-b',
+  template: `
     <div>
       <input type="text" #input>
       <button (click)="onLog(input.value)">Log</button>
@@ -21,19 +21,19 @@ import { Component, OnInit } from '@angular/core';
   `
 })
 export class CmpBComponent implements OnInit {
-    value = '';
-    items: string[] = [];
+  value = '';
+  items: string[] = [];
 
-    onLog(value: string) {
-    }
+  onLog(value: string) {
+  }
 
-    onStore(value: string) {
-    }
+  onStore(value: string) {
+  }
 
-    onGet() {
-    }
+  onGet() {
+  }
 
-    ngOnInit() {
+  ngOnInit() {
 
-    }
+  }
 }

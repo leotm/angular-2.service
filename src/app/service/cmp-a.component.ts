@@ -40,7 +40,7 @@ export class CmpAComponent {
     }
 
     onGet() {
-      this.items = this.dataService.getData();
+      this.items = this.dataService.getData().slice();
     }
 
     onSend(value: string) {

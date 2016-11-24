@@ -26,10 +26,11 @@ import { DataService } from './data.service';
     providers: [LogService, DataService]
 })
 export class CmpAComponent {
-    constructor(private logService: LogService, private dataService: DataService) { }
 
     value = '';
     items: string[] = [];
+
+    constructor(private logService: LogService, private dataService: DataService) { }
 
     onLog(value: string) {
         this.logService.writeToLog(value);
@@ -40,10 +41,11 @@ export class CmpAComponent {
     }
 
     onGet() {
-      this.items = this.dataService.getData().slice();
+      this.items = this.dataService.getData();
     }
 
     onSend(value: string) {
 
     }
+
 }

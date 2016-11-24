@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+
 import { ServiceComponent } from './service/service.component';
 import { CmpAComponent } from './service/cmp-a.component';
 import { CmpBComponent } from './service/cmp-b.component';
+import { LogService } from './service/log.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { CmpBComponent } from './service/cmp-b.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
